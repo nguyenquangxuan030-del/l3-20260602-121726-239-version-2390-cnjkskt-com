@@ -1,16 +1,17 @@
-﻿# website-upload-20260602-121726-239
+# 日韩经典影片 静态电影网站
 
-Batch 239 of 38. Contains extracted static website versions. The original zip files are not committed.
+已生成内容：
 
-| Directory | Source zip |
-| --- | --- |
-| version-2381 | project-bolt-sb1-q1bbjagy - 副本-chatgpt (1).zip |
-| version-2382 | project-bolt-sb1-q1bbjagy-chatgpt (1) (moved 1).zip |
-| version-2383 | project-bolt-sb1-q1bbjagy-chatgpt (1).zip |
-| version-2384 | project-bolt-sb1-q2i4cq2v - 副本-chatgpt (1).zip |
-| version-2385 | project-bolt-sb1-q2i4cq2v-chatgpt (1) (moved 1).zip |
-| version-2386 | project-bolt-sb1-q2i4cq2v-chatgpt (1).zip |
-| version-2387 | project-bolt-sb1-q4cb9fx1 - 副本-chatgpt (1).zip |
-| version-2388 | project-bolt-sb1-q4cb9fx1-chatgpt (1) (moved 1).zip |
-| version-2389 | project-bolt-sb1-q4cb9fx1-chatgpt (1).zip |
-| version-2390 | project-bolt-sb1-q5qxmxnm - 副本-chatgpt (1).zip |
+- 首页：index.html
+- 分类总览：categories.html
+- 独立分类页：10 个
+- 排行榜：ranking.html
+- 全站搜索：search.html
+- 影片详情页：2000 个
+- 影片数据：按 data_2000.txt 实际解析数量生成
+- 播放器：详情页使用 HLS/m3u8 播放逻辑，播放源来自上传 JS 中解析到的 20 个 m3u8 地址并循环绑定
+- 图片：页面引用顶级目录 1.jpg 到 150.jpg，可在部署前把对应封面图片放入网站根目录
+
+部署方式：
+
+把本目录全部上传到静态服务器或对象存储即可访问。所有主要影片内容已写入 HTML 页面。
